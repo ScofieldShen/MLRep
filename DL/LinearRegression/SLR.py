@@ -1,5 +1,5 @@
 import numpy as np
-
+# y = kx + b
 def fitLR(x, y):
     n = len(x)
     sumup = 0
