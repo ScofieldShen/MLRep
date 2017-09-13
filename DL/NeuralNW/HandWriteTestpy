@@ -1,0 +1,17 @@
+# 每个图片8x8  识别数字：0,1,2,3,4,5,6,7,8,9
+from sklearn.datasets import load_digits
+import pylab as pl
+
+def RecNum():
+    digits = load_digits()
+    return digits
+
+def DrawP(digits):
+    pl.gray()
+    pl.matshow(digits.images[0])
+    pl.show()
+
+if __name__ == '__main__':
+    digits = RecNum()
+    print(digits.data.shape)
+    DrawP(digits)
